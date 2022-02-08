@@ -92,7 +92,7 @@ async def hmm(_, message):
             await lel.edit("Asuna AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Asuna AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Suslizbot AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -102,7 +102,7 @@ async def hmm(_, message):
             await lel.edit("Asuna AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Asuna AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Suslizbot AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -202,15 +202,15 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("asuna", "Aco")
-        test = test.replace("Asuna", "Aco")
+        test = test.replace("suslizbot", "Aco")
+        test = test.replace("Suslizbot", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Asuna")
-        response = response.replace("aco", "Asuna")
-        response = response.replace("Luna", "Asuna")
-        response = response.replace("luna", "Asuna")
+        response = response.replace("Aco", "Suslizbot")
+        response = response.replace("aco", "Suslizbot")
+        response = response.replace("Luna", "Suslizbot")
+        response = response.replace("luna", "Suslizbot")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -276,12 +276,12 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("asuna", "Aco")
-    test = test.replace("Asuna", "Aco")
+    test = test.replace("suslizbot", "Aco")
+    test = test.replace("Suslizbot", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Asuna")
-    response = response.replace("aco", "Asuna")
+    response = response.replace("Aco", "Suslizbot")
+    response = response.replace("aco", "Suslizbot")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -295,7 +295,7 @@ async def inuka(client, message):
 
 
 @asuna.on_message(
-    filters.regex("Asuna|asuna|asuna|ASUNA|asuna")
+    filters.regex("Suslizbot|suslizbot|suslizbot|SUSLIZBOT|suslizbot")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -372,7 +372,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> AI Chatbot </b>
-Asuna AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Suslizbot AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
